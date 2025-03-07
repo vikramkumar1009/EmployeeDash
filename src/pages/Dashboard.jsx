@@ -84,10 +84,10 @@ const Dashboard = () => {
 
         {/* Logged-in User Details */}
         {loggedInUser && (
-          <div className="bg-blue-800 p-4 rounded-lg mb-6">
-            <p className="text-lg font-semibold">{employee.name}</p>
-            <p className="text-sm">{employeer.email}</p>
-            <p className="text-sm capitalize">{employee.role}</p>
+          <div className="bg-white p-4 rounded-lg mb-6">
+            <p className="text-lg font-semibold">{loggedInUser.name}</p>
+            <p className="text-sm">{loggedInUser.email}</p>
+            <p className="text-sm capitalize">{loggedInUser.role}</p>
           </div>
         )}
 
@@ -148,7 +148,7 @@ const Dashboard = () => {
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
               Employee Details
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+           {loggedInUser && ( <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-2">
                 <FaUser className="text-blue-700" />
                 <p className="text-gray-700">{loggedInUser.name}</p>
@@ -161,7 +161,7 @@ const Dashboard = () => {
                 <FaBriefcase className="text-blue-700" />
                 <p className="text-gray-700">{loggedInUser.role}</p>
               </div>
-            </div>
+            </div> )}
           </div>
 
           {/* Performance Metrics */}
