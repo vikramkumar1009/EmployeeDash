@@ -37,9 +37,9 @@ const Dashboard = () => {
   // Dummy Data
   const employee = {
     id: "EMP001",
-    name: "John Doe",
-    email: "john.doe@example.com",
-    role: "Manager",
+    name: "Thirteen",
+    email: "thirteen@infratech.com",
+    role: "Employee",
   };
 
   const performanceMetrics = {
@@ -85,9 +85,9 @@ const Dashboard = () => {
         {/* Logged-in User Details */}
         {loggedInUser && (
           <div className="bg-blue-800 p-4 rounded-lg mb-6">
-            <p className="text-lg font-semibold">{loggedInUser.name}</p>
-            <p className="text-sm">{loggedInUser.email}</p>
-            <p className="text-sm capitalize">{loggedInUser.role}</p>
+            <p className="text-lg font-semibold">{employee.name}</p>
+            <p className="text-sm">{employeer.email}</p>
+            <p className="text-sm capitalize">{employee.role}</p>
           </div>
         )}
 
