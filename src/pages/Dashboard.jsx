@@ -84,10 +84,10 @@ const Dashboard = () => {
 
         {/* Logged-in User Details */}
         {loggedInUser && (
-          <div className="bg-white p-4 rounded-lg mb-6">
-            <p className="text-lg text-black font-semibold">{loggedInUser.name}</p>
-            <p className="text-sm text-black">{loggedInUser.email}</p>
-            <p className="text-sm text-black capitalize">{loggedInUser.role}</p>
+          <div className="bg-blue-900 p-4 rounded-lg mb-6">
+            <p className="text-lg  font-semibold">{loggedInUser.name}</p>
+            <p className="text-sm ">{loggedInUser.email}</p>
+            <p className="text-sm  capitalize">{loggedInUser.role}</p>
           </div>
         )}
 
