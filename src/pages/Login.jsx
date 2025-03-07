@@ -82,10 +82,10 @@ const Login = () => {
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
-        <Link to="/" >
+        <Link to={"https://erp-dashboard-azure.vercel.app/"} >
           <button
             type="submit"
-            className="w-full mt-5 bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+            className="w-full mt-5 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 transition"
           >
             Go To HomePage
           </button>
